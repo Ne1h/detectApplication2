@@ -3,18 +3,18 @@
     <item android:state_pressed="true">
         <shape>
             <shape>
-                <solid android:color="#1a7a1a" /> <!-- Màu nền mặc định -->
+                <solid android:color="#4FDBC3" /> <!-- Màu nền mặc định -->
                 <corners android:radius="10dp" /> <!-- Độ bo tròn góc -->
                 <stroke
                     android:width="0.5dp"
-                    android:color="#1a7a1a" /> <!-- Màu và độ dày của viền mặc định -->
+                    android:color="#4FDBC3" /> <!-- Màu và độ dày của viền mặc định -->
             </shape>
         </shape>
     </item>
     <!-- Trạng thái mặc định -->
     <item>
         <shape>
-            <solid android:color="#E8E8E8" /> <!-- Màu nền mặc định -->
+            <solid android:color="#4FDBC3" /> <!-- Màu nền mặc định -->
             <corners android:radius="10dp" /> <!-- Độ bo tròn góc -->
             <stroke
                 android:width="0.5dp"

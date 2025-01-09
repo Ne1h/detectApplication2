@@ -106,24 +106,24 @@
 
         <!-- Duration Info -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingVertical="8dp">
+            android:paddingVertical="700dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:text="DURATION"
                 android:textColor="#141313"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1600dp"
                 android:text="30:48 min"
                 android:textColor="#121111"
                 android:textSize="20sp" />
@@ -131,7 +131,7 @@
 
         <!-- Average Speed Info -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
@@ -147,9 +147,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1600dp"
                 android:text="60 km/h"
                 android:textColor="#161212"
                 android:textSize="20sp" />

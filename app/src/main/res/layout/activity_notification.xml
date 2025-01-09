@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="-20dp"
         app:cardCornerRadius="28dp"
-        app:cardBackgroundColor="#1a7a1a">
+        app:cardBackgroundColor="#4FDBC3">
 
         <TextView
             android:layout_width="match_parent"
