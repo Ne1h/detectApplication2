@@ -10,26 +10,21 @@
 
     <!--    xay logo-->
     <LinearLayout
-        android:layout_width="275dp"
-        android:gravity="center"
-        android:background="@drawable/bglogo"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:src="@drawable/meme"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"/>
+        android:background="@drawable/bglogo"
+        android:gravity="center">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="343dp"
             android:layout_height="match_parent"
-            android:text="UIT-PHOMAI"
-            android:textColor="#1a7a1a"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:text="  POTHOLE DETECTOR"
+            android:textColor="#4FDBC3"
             android:textSize="32sp"
-            android:fontFamily="sans-serif-medium"/>
+            android:textStyle="bold" />
     </LinearLayout>
     <!--xay cardview -->
     <androidx.cardview.widget.CardView
@@ -41,37 +36,38 @@
         android:id="@+id/card_view"        >
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="490dp"
             android:orientation="vertical"
             android:padding="28dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:text="SignIn"
-                android:textStyle="bold"
-                android:textColor="#1a7a1a"
+                android:textColor="#7695DC"
                 android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"/>
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
+                android:layout_height="20dp" />
             <!--            ========================================================================-->
             <EditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:inputType="textEmailAddress"
                 android:background="@drawable/bgbuttongoogle"
-                android:paddingHorizontal="15dp"
                 android:drawableEnd="@drawable/email_icon"
-                android:hint="Please enter your email"/>
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="15dp" />
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"/>
+                android:layout_height="25dp" />
             <!--            ========================================================================-->
 
             <EditText
@@ -80,43 +76,47 @@
                 android:layout_height="60dp"
                 android:background="@drawable/bgbuttongoogle"
                 android:drawableEnd="@drawable/password_icon"
-                android:hint="Please enter your password"
+                android:hint="Enter your password"
                 android:inputType="textPassword"
                 android:paddingHorizontal="15dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <CheckBox
                     android:id="@+id/ckb_remember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="Remember me"
-                    android:layout_centerVertical="true"/>
+                    android:layout_alignParentEnd="false"
+                    android:layout_centerVertical="true"
+                    android:text="Remember me" />
             </RelativeLayout>
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"/>
+                android:layout_height="30dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/btn_back"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:text="Back"
-                    android:textStyle="bold"
+                    android:background="@drawable/bgbutton"
                     android:fontFamily="sans-serif-medium"
+                    android:text="Back"
                     android:textColor="@color/white"
-                    android:background="@drawable/bgbutton"/>
+                    android:textStyle="bold" />
+
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/btn_login"
                     android:layout_width="150dp"
@@ -128,16 +128,17 @@
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
+                android:layout_height="10dp" />
             <!--========================================================================-->
 
             <!--========================================================================-->
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
+                android:layout_height="40dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

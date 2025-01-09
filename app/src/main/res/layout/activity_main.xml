@@ -10,26 +10,21 @@
 
 <!--    xay logo-->
     <LinearLayout
-        android:layout_width="275dp"
-        android:gravity="center"
-        android:background="@drawable/bglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:src="@drawable/meme"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"/>
+        android:background="@drawable/bglogo"
+        android:gravity="center">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="343dp"
             android:layout_height="match_parent"
-            android:text="UIT-PHOMAI"
-            android:textColor="#1a7a1a"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:text="  POTHOLE DETECTOR"
+            android:textColor="#4FDBC3"
             android:textSize="32sp"
-            android:fontFamily="sans-serif-medium"/>
+            android:textStyle="bold" />
     </LinearLayout>
 <!--xay cardview -->
     <androidx.cardview.widget.CardView
