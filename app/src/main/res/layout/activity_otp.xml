@@ -5,81 +5,86 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtpActivity">
+    tools:context=".OtpActivity"
+    android:background="@color/white">
 
+    <!-- Header Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="#4FDBC3"
+        android:layout_marginTop="-20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="15dp"
+            android:text="OTP Verification"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Main Content Section -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_top"
+        android:layout_margin="16dp"
         android:orientation="vertical">
-        <LinearLayout
+
+        <!-- Instruction Text -->
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <ImageView
-                android:layout_marginTop="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/hinhlogolon"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="OTP Verification"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-medium"
-                android:layout_weight="0.3"
-                android:textColor="#000000"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:fontFamily="sans-serif-medium"
-                android:text="Enter the OTP sent to your email NOW!"
-                android:textSize="17dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"/>
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Enter the OTP sent to your email NOW!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:paddingVertical="16dp" />
+
+        <!-- OTP Input Field -->
         <EditText
             android:id="@+id/edt_otp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:inputType="textEmailAddress"
+            android:background="@drawable/bgbuttongoogle"
             android:drawableEnd="@drawable/password_icon"
-            android:hint="Please enter your OTP"/>
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp" />
+
+        <!-- Spacing -->
         <View
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Button Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btn_done_otp"
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:text="Done"
-                android:textStyle="bold"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bgbutton"
                 android:fontFamily="sans-serif-medium"
+                android:text="Done"
                 android:textColor="@color/white"
-                android:background="@drawable/bgbutton"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>

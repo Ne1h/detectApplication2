@@ -8,7 +8,7 @@
     android:background="@drawable/bgroad"
     tools:context=".SignInActivity">
 
-    <!--    xay logo-->
+    <!-- xay logo -->
     <LinearLayout
         android:layout_width="343dp"
         android:layout_height="53dp"
@@ -26,27 +26,28 @@
             android:textSize="32sp"
             android:textStyle="bold" />
     </LinearLayout>
-    <!--xay cardview -->
+
+    <!-- CardView centered in the screen -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         app:cardCornerRadius="28dp"
         android:layout_marginBottom="-20dp"
-        android:id="@+id/card_view"        >
-
+        android:id="@+id/card_view">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="490dp"
+            android:layout_height="422dp"
             android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:padding="28dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="SignIn"
+                android:text="Sign In"
                 android:textColor="#7695DC"
                 android:textSize="32sp"
                 android:textStyle="bold" />
@@ -54,7 +55,8 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
-            <!--            ========================================================================-->
+
+            <!-- EditText for email -->
             <EditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
@@ -68,8 +70,8 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="25dp" />
-            <!--            ========================================================================-->
 
+            <!-- EditText for password -->
             <EditText
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
@@ -97,6 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp" />
 
+            <!-- Buttons for back and login -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,7 +127,6 @@
                     android:background="@drawable/bgbutton"
                     android:fontFamily="sans-serif-medium"
                     android:text="Login"
-
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -132,9 +134,6 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp" />
-            <!--========================================================================-->
-
-            <!--========================================================================-->
 
             <View
                 android:layout_width="wrap_content"

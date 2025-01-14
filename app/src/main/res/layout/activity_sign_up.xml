@@ -8,155 +8,154 @@
     android:background="@drawable/bgroad"
     tools:context=".SignUpActivity">
 
-    <!--    xay logo-->
+    <!-- Header Section -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:background="@drawable/bglogo"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="343dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="  POTHOLE DETECTOR"
+            android:text="POTHOLE DETECTOR"
             android:textColor="#4FDBC3"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
     </LinearLayout>
-    <!--xay cardview -->
+
+    <!-- Sign-Up Card -->
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
         app:cardCornerRadius="28dp"
-        android:layout_marginBottom="-20dp"
-        android:id="@+id/card_view"        >
-
-
+        app:cardElevation="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="28dp">
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SignUp"
-                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sign Up"
                 android:textColor="#7695DC"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium"/>
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Spacing -->
             <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-            <!--            ========================================================================-->
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Username -->
             <EditText
                 android:id="@+id/edt_username"
                 android:layout_width="match_parent"
-                android:background="@drawable/bgbuttongoogle"
-                android:paddingHorizontal="15dp"
                 android:layout_height="60dp"
-                android:inputType="textEmailAddress"
+                android:background="@drawable/bgbuttongoogle"
                 android:drawableEnd="@drawable/smile_icon"
-                android:hint="Enter your username"/>
+                android:hint="Enter your username"
+                android:inputType="text"
+                android:paddingHorizontal="16dp" />
+
+            <!-- Spacing -->
             <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-            <!--            ========================================================================-->
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Email -->
             <EditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:inputType="textEmailAddress"
                 android:background="@drawable/bgbuttongoogle"
-                android:paddingHorizontal="15dp"
                 android:drawableEnd="@drawable/email_icon"
-                android:hint="Please enter your email"/>
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp" />
+
+            <!-- Spacing -->
             <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-            <!--            ========================================================================-->
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Password -->
             <EditText
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:drawableEnd="@drawable/password_icon"
-                android:inputType="textPassword"
                 android:background="@drawable/bgbuttongoogle"
-                android:paddingHorizontal="15dp"
-                android:hint="Please enter your password"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
+                android:drawableEnd="@drawable/password_icon"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp" />
 
-            <!--            ========================================================================-->
+            <!-- Spacing -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Confirm Password -->
             <EditText
                 android:id="@+id/edt_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:inputType="textPassword"
-                android:drawableEnd="@drawable/password_icon"
                 android:background="@drawable/bgbuttongoogle"
-                android:paddingHorizontal="15dp"
-                android:hint="Please confirm your password"/>
+                android:drawableEnd="@drawable/password_icon"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp" />
+
+            <!-- Spacing -->
             <View
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"/>
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <!-- Buttons Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
+
                 <Button
                     android:id="@+id/btn_back"
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bgbutton"
                     android:text="Back"
-                    android:textStyle="bold"
-                    android:fontFamily="sans-serif-medium"
                     android:textColor="@color/white"
-                    android:background="@drawable/bgbutton"/>
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
                 <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+
                 <Button
                     android:id="@+id/btn_signup"
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:background="@drawable/bgbutton"
-                    android:fontFamily="sans-serif-medium"
                     android:text="Sign Up"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
             </LinearLayout>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"/>
-            <!--========================================================================-->
-<!--            <RelativeLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-<!--                <CheckBox-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Remember me"-->
-<!--                    android:layout_centerVertical="true"/>-->
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="I forgot my password"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_centerVertical="true"/>-->
-<!--            </RelativeLayout>-->
-            <!--========================================================================-->
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
