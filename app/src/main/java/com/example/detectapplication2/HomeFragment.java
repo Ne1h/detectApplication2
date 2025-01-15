@@ -101,7 +101,7 @@ public class HomeFragment extends Fragment {
         });
 
         // Fetch weather for Saigon on startup
-        new GetWeatherTask("Binh Duong").execute();
+        new GetWeatherTask("Ho Chi Minh").execute();
 
         fetchPotholesData(multilinePotholes);
 
@@ -134,7 +134,7 @@ public class HomeFragment extends Fragment {
             return response;
         }
 
-/*        @Override
+        @Override
         protected void onPostExecute(String result) {
             try {
                 JSONObject jsonObject = new JSONObject(result);
@@ -156,7 +156,7 @@ public class HomeFragment extends Fragment {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }*/
+        }
     }
 
     private void fetchPotholesData(TextView multilinePotholes) {
